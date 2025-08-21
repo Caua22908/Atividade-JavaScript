@@ -6,7 +6,22 @@ Exercícios Práticos - Estruturas de Decisão (if, else, switch)
 
 // 1. Crie uma variável `idade` e use um `if` para exibir "Maior de idade" se idade >= 18.
 
+var idade = 18
+if (idade >=18){
+    console.log("Maior de idade")
+}
+
+
 // 2. Crie uma variável `hora` e use `if/else` para exibir "Bom dia" se hora < 12 e "Boa tarde" caso contrário.
+
+var hora = 12
+if (hora <12){
+    console.log("Bom dia")
+}
+
+else{
+    console.log("Boa tarde")
+}
 
 // 3. Crie uma variável `nota` e use `if/else if/else` para exibir:
 // "Excelente" se nota >= 9
@@ -14,17 +29,199 @@ Exercícios Práticos - Estruturas de Decisão (if, else, switch)
 // "Recuperação" se nota >= 5
 // "Reprovado" caso contrário
 
+var nota = 10
+if(nota >=9){
+    console.log("Excelente")
+}
+
+else if (nota >=7) {
+    console.log("Aprovado")
+    
+}
+
+else if (nota >=5){
+    console.log("Recuperação")
+}
+
+else{
+    console.log("Reprovado")
+}
+
 // 4. Crie uma variável `diaSemana` (1 a 7) e use `switch/case` para exibir o nome do dia correspondente.
+
+var diaSemana = 1
+switch (diaSemana){
+    case (diaSemana =1):
+        console.log("Segunda");
+        break;
+
+    case (diaSemana =2):
+        console.log("Terça");
+        break;
+
+    case (diaSemana = 3):
+        console.log("Quarta");
+        break;
+    
+    case (diaSemana =4):
+        console.log("Quinta");
+        break;
+
+    case (diaSemana =5):
+        console.log("Sexta");
+        break;
+    
+    case (diaSemana =6):
+        console.log("Sabado");
+        break;
+
+    case (diaSemana =7):
+        console.log("Domingo");
+        break;
+}
+
 
 // 5. Modifique o exercício anterior para usar `default` caso o valor da variável não seja de 1 a 7.
 
+var diaSemana = 1
+switch (diaSemana){
+    case (diaSemana =1):
+        console.log("Segunda");
+        break;
+
+    case (diaSemana =2):
+        console.log("Terça");
+        break;
+
+    case (diaSemana = 3):
+        console.log("Quarta");
+        break;
+    
+    case (diaSemana =4):
+        console.log("Quinta");
+        break;
+
+    case (diaSemana =5):
+        console.log("Sexta");
+        break;
+    
+    case (diaSemana =6):
+        console.log("Sabado");
+        break;
+
+    case (diaSemana =7):
+        console.log("Domingo");
+        break;
+
+        default:
+            console.log("Dia da semana não reconhecido!")
+}
+
+
 // 6. Crie uma variável `cor` e use `switch/case` para agrupar cores primárias (vermelho, azul, verde) e secundárias (amarelo, roxo, laranja).
 
+var cor = "vermelho"
+
+switch (cor.toLowerCase()) {
+    case "vermelho":
+  case "azul":
+  case "verde":
+    console.log("Cor primária");
+    break;
+
+  case "amarelo":
+  case "roxo":
+  case "laranja":
+    console.log("Cor secundária");
+    break;
+
+  default:
+    console.log("Cor desconhecida");
+    
+}
+
+
 // 7. Crie um `if` que verifique se um número é positivo, negativo ou zero, e exiba a mensagem correspondente.
+var numero = 1
+if (numero <= -1) {
+    console.log("Negativo")
+}
+
+else (numero >=0){
+    console.log("Positivo")
+}
 
 // 8. Crie um `if/else` que verifica se um usuário pode acessar um sistema com base em idade >= 18.
+var idade = 18
+
+if (idade <18){
+    console.log("Você é de menor, não pode acessar a plataforma")
+}
+
+else{
+    console.log("Acesso Liberado")
+}
+
 
 // 9. Crie um `switch` que exiba uma mensagem diferente para cada mês do ano (1 a 12), usando `default` para valor inválido.
+
+var mes = 1
+
+switch(mes){
+
+    case (mes = 1):
+    console.log("Janeiro");
+    break;
+
+    case (mes = 2):
+    console.log("Fevereiro");
+    break; 
+
+    case (mes = 3):
+    console.log("Março");
+    break; 
+
+    case (mes = 4):
+    console.log("Abril");
+    break;
+
+    case (mes = 5):
+    console.log("Maio");
+    break;
+
+    case (mes = 6):
+    console.log("Junho");
+    break;
+    
+    case (mes = 7):
+    console.log("Julho");
+    break 
+
+    case (mes = 8):
+    console.log("Agosto");
+    break;
+
+    case (mes= 9):
+    console.log("Setembro");
+    break;
+
+    case (mes =10):
+    console.log("Outubro");
+    break;
+
+    case (mes= 11):
+    console.log("Novembro");
+    break;
+
+    case (mes = 12):
+    console.log("Dezembro");
+    break;
+
+    default:
+    console.log("Mês não reconhecido!")
+    
+
+}
 
 // 10. Crie um `if/else if/else` que classifica a velocidade de um veículo:
 // <= 40 km/h → "Devagar"
@@ -32,7 +229,32 @@ Exercícios Práticos - Estruturas de Decisão (if, else, switch)
 // <= 120 km/h → "Rápido"
 // > 120 km/h → "Muito rápido"
 
+var velo = 40
+if (velo <= 40){
+    console.log("Devagar")
+}
+
+else if (velo <=80){
+    console.log("Moderado")
+}
+
+else if (velo <=120){
+    console.log("Rapido")
+}
+
+else {
+    console.log("Muito Rapido")
+}
+
 // 11. Crie uma variável booleana `isAdmin` e use `if/else` para exibir se o usuário tem acesso ou não.
+var isAdmin = "Ana"
+if (isAdmin = "Ana" ){
+    console.log("usuário tem acesso")
+}
+
+else{
+    console.log("Não tem acesso")
+}
 
 // 12. Crie uma variável `temperatura` e use `switch` para exibir:
 // "Frio" se 0, 1, 2
