@@ -230,21 +230,24 @@ switch(mes){
 // > 120 km/h → "Muito rápido"
 
 var velo = 40
+
 if (velo <= 40){
     console.log("Devagar")
 }
 
-else if (velo <=80){
+else if (velo <= 80){
     console.log("Moderado")
 }
 
-else if (velo <=120){
-    console.log("Rapido")
+else if (velo <= 120){
+    console.log(Rápido)
 }
 
 else {
-    console.log("Muito Rapido")
+    console.log("Muito rápido")
 }
+
+
 
 // 11. Crie uma variável booleana `isAdmin` e use `if/else` para exibir se o usuário tem acesso ou não.
 var isAdmin = "Ana"
@@ -262,15 +265,79 @@ else{
 // "Quente" se 6, 7, 8
 // "Desconhecido" para outros valores
 
+var temp = 1
+switch (temp){
+    case (temp = 0):
+    case (temp = 1):
+    case (temp = 2):
+        console.log("Frio");
+        break;
+
+        case (temp = 3):
+        case (temp = 4):
+        case (temp = 5):
+            console.log("Agradável");
+            break;
+        
+        case (temp = 6):
+        case (tempo = 7):
+        case (temp = 8):
+            console.log("Quente");
+            break;
+
+            default:
+                console.log("Desconhecido");
+
+}
+
+     
+
+         
+
+
+
 // 13. Crie um `if` que verifica se um número é par ou ímpar.
+var num + 2
+
+if (var num % 2 == 0){
+    console.log("Número par")
+}
+
+else{
+    console.log("Numerao ímpar")
+}
 
 // 14. Crie um `switch` para exibir a estação do ano com base em um número de 1 a 4.
+var estacao = 1
+switch (estacao = 1){
+    case (estacao = 1):
+        console.log("Verão");
+        break;
+    case (estacao = 2):
+    console.log("Outono");
+    break;
+
+    case (estacao = 3):
+        console.log("Inverno");
+        break;
+
+    case (estacao = 4):
+        console.log("Primavera");
+        break;
+}
+
 
 // 15. Crie um `if/else if/else` para classificar idade de uma pessoa:
 // 0-12 → Criança
 // 13-19 → Adolescente
 // 20-59 → Adulto
 // 60+ → Idoso
+
+    var idade = 12
+    
+    if(idade <0 >12)
+        console.log("Criança")
+
 
 // 16. Crie uma variável `saldo` e use `if` para verificar se é positivo, negativo ou zero.
 
